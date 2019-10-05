@@ -217,9 +217,9 @@ static void MX_I2C3_SMBUS_Init(void)
 
   /* USER CODE END I2C3_Init 1 */
   hsmbus3.Instance = I2C3;
-  hsmbus3.Init.Timing = 0x10909CEC;
+  hsmbus3.Init.Timing = 0x60E32C34;
   hsmbus3.Init.AnalogFilter = SMBUS_ANALOGFILTER_ENABLE;
-  hsmbus3.Init.OwnAddress1 = 2;
+  hsmbus3.Init.OwnAddress1 = 44;
   hsmbus3.Init.AddressingMode = SMBUS_ADDRESSINGMODE_7BIT;
   hsmbus3.Init.DualAddressMode = SMBUS_DUALADDRESS_DISABLE;
   hsmbus3.Init.OwnAddress2 = 0;
@@ -227,7 +227,7 @@ static void MX_I2C3_SMBUS_Init(void)
   hsmbus3.Init.GeneralCallMode = SMBUS_GENERALCALL_DISABLE;
   hsmbus3.Init.NoStretchMode = SMBUS_NOSTRETCH_DISABLE;
   hsmbus3.Init.PacketErrorCheckMode = SMBUS_PEC_DISABLE;
-  hsmbus3.Init.PeripheralMode = SMBUS_PERIPHERAL_MODE_SMBUS_SLAVE;
+  hsmbus3.Init.PeripheralMode = SMBUS_PERIPHERAL_MODE_SMBUS_HOST;
   hsmbus3.Init.SMBusTimeout = 0x000083D0;
   if (HAL_SMBUS_Init(&hsmbus3) != HAL_OK)
   {
