@@ -1,0 +1,7 @@
+Project: EWARM
+Converter: IARProjectParser
+Date: 20191008
+
+Project needs GCC compatible startup code and linker script
+OTHostProto: FPU set to default FPU for device: FPv4-SP-D16.
+OTHostProto: FPU set to default FPU for device: FPv4-SP-D16.
