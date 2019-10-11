@@ -18,7 +18,7 @@
 
 #ifndef _REF_FUNCTIONS_H_
 #define _REF_FUNCTIONS_H_
-
+#include "stm32f4xx_hal.h"
 #include "arm_math.h"
 #include "arm_nnfunctions.h"
 //#include "arm_nnsupportfunctions.h"
